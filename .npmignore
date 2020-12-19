@@ -1,0 +1,17 @@
+# GitHub
+.github
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+
+# Testing
+__tests__
+
+# misc
+.DS_Store
+.env*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+/.vscode
