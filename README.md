@@ -22,7 +22,6 @@ You can use a CDN, such as [JSDelivr](https://jsdelivr.com):
 ### Usage
 ```js
 const convertToString = require('convert-to-string');
-const myObj = {name:['John','Doe'],age:17,incrementAge:(more)=>this.age+=more,decrementAge(less){this.age-=less;},food:{name:'pizza',taste:'nice'}};
 const myObj = {
     name: ['John', 'Doe'],
     age: 17,
@@ -34,5 +33,5 @@ const myObj = {
 }
 
 console.log(convertToString(myObj));
-// ''
+// '{ name: ['John', 'Doe'], age: 17, incrementAge: more => this.age += more, decrementAge: decrementAge(less) {\n\tthis.age -= less;\n\t}, food: { name: 'pizza', taste: 'nice' } }` */
 ```
