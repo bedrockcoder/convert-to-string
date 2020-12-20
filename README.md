@@ -1,4 +1,4 @@
-# `convert-to-string` v1.0.0
+# `convert-to-string` v1.0.1
 Have you ever gotten stuck with `'[object Object]'`?  
 Or wondered why your array looks like `'1,2,3,a,b,c,,d'`?  
 Or haven't been able to get property `toString` of `null`?  
@@ -30,8 +30,8 @@ const myObj = {
         this.age -= less;
     },
     food: { name: 'pizza', taste: 'nice' }
-}
+};
 
 console.log(convertToString(myObj));
-// '{ name: ['John', 'Doe'], age: 17, incrementAge: more => this.age += more, decrementAge: decrementAge(less) {\n\tthis.age -= less;\n\t}, food: { name: 'pizza', taste: 'nice' } }` */
+// "{ name: ['John', 'Doe'], age: 17, incrementAge: more => this.age += more, decrementAge: decrementAge(less) {\n    this.age -= less;\n    }, food: { name: 'pizza', taste: 'nice' } }"
 ```

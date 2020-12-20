@@ -5,4 +5,4 @@
  */
 declare const convertToString: (obj?: any) => string;
 
-export default convertToString;
+export = convertToString;
