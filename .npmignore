@@ -2,6 +2,7 @@
 .github
 CODE_OF_CONDUCT.md
 CONTRIBUTING.md
+CHANGELOG.md
 
 # Testing
 __tests__
