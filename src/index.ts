@@ -30,11 +30,12 @@ module.exports = (object?: any): string => {
         });
         return `${str.slice(0, -2)} }`;
     } else if (typeof object === 'function') {
+        const isAsync = object.toString().slice(0, 5) === 'async';
         const isArrowFunction = object.toString().slice(0, 8) !== 'function';
         if (isArrowFunction) {
             return object.toString();
         } else {
-            return `function ${object.toString().slice(object.toString().indexOf('('))}`;
+            return `${isAsync ? 'async ' : ''}function ${object.toString().slice(object.toString().indexOf('('))}`;
         }
     } else if (typeof object === 'symbol') {
         return object.toString();
