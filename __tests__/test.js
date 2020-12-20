@@ -21,8 +21,8 @@ test('The function returns the correct data', () => {
         console.log(`${param} is cool!`);
         return 7 + 8 + param;
     };
-    expect(convertToString(asyncFunction)).toBe('async (param) => {\n    console.log(`${param} is cool!`);\n    return 7 + 8 + param;\n}');
+    expect(convertToString(asyncFunction)).toBe('async param => {\n    console.log(`${param} is cool!`);\n    return 7 + 8 + param;\n  }');
 
     async function anotherAsyncFunc(param1, param2) { return 'hi'; }
-    expect(convertToString(anotherAsyncFunc)).toBe("async funtcion (param1, param2) { return 'hi'; }");
+    expect(convertToString(anotherAsyncFunc)).toBe("async function (param1, param2) {\n    return 'hi';\n  }");
 });
