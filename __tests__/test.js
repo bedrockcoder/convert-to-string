@@ -1,4 +1,6 @@
-const convertToString = require('../dist/index.js');
+/** @jest-environment node */
+
+const convertToString = require('../dist/index.min.js');
 
 test('The function returns the correct data', () => {
     const str = convertToString({
@@ -14,8 +16,8 @@ test('The function returns the correct data', () => {
             return this.favoriteFoods[0].food;
         },
         getLeastFavoriteFood: () => this.favoriteFoods[this.favoriteFoods.length - 1].food
-    });
-    expect(str).toBe(`{ name: { first: 'John', last: 'Doe' }, age: 17, favoriteFoods: [{ food: 'Pizza', rating: 5 }, { food: 'Cake', rating: 4.78 }, { food: "I really don't know what I'm doing here", rating: 4.673498 }, 7], getFavoriteFood: getFavoriteFood() {\n      return this.favoriteFoods[0].food;\n    }, getLeastFavoriteFood: () => this.favoriteFoods[this.favoriteFoods.length - 1].food }`)
+    }, { defaultString: 'double-quotes', spacesAfterComma: 2 });
+    expect(str).toBe(`{ name: { first: "John",  last: "Doe" },  age: 17,  favoriteFoods: [{ food: "Pizza",  rating: 5 },  { food: "Cake",  rating: 4.78 },  { food: "I really don't know what I'm doing here",  rating: 4.673498 },  7],  getFavoriteFood: getFavoriteFood() {\n      return this.favoriteFoods[0].food;\n    },  getLeastFavoriteFood: () => this.favoriteFoods[this.favoriteFoods.length - 1].food }`);
 
     const asyncFunction = async (param) => {
         console.log(`${param} is cool!`);
