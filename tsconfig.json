@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2015",
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
