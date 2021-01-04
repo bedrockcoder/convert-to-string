@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Convert any data type into a string",
   "main": "dist/index.min.js",
+  "browser": "dist/index.min.js",
   "types": "index.d.ts",
   "scripts": {
     "build": "tsc && minify dist/index.js > dist/index.min.js",
