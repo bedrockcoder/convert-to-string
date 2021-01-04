@@ -1,14 +1,17 @@
-import { Options } from '..';
-
-const generateSpace = (spaceCount: number) => {
-    let spaces = '';
-    for (let i = 0; i < spaceCount; i++) {
-        spaces += ' ';
-    }
-    return spaces;
-};
+interface Options {
+    defaultString?: 'single-quotes' | 'double-quotes' | 'backticks';
+    spacesAfterComma?: number;
+}
 
 const convertToString = (obj?: unknown, options?: Options): string => {
+    const generateSpace = (spaceCount: number) => {
+        let spaces = '';
+        for (let i = 0; i < spaceCount; i++) {
+            spaces += ' ';
+        }
+        return spaces;
+    };
+
     if (!options) options = { defaultString: 'single-quotes', spacesAfterComma: 1 };
     if (!options.defaultString) options.defaultString = 'single-quotes';
     if (options.spacesAfterComma == null) options.spacesAfterComma = 1;
