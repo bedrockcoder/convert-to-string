@@ -1,3 +1,5 @@
+/** @jest-environment node */
+
 const convertToString = require('../dist/index.js');
 
 test('The function returns the correct data', () => {
