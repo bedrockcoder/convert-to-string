@@ -1,4 +1,4 @@
-# `convert-to-string` v1.1.0
+# `convert-to-string` v1.1.1
 Have you ever gotten stuck with `'[object Object]'`?  
 Or wondered why your array looks like `'1,2,3,a,b,c,,d'`?  
 Or haven't been able to get property `toString` of `null`?  

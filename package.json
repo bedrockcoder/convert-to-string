@@ -1,6 +1,6 @@
 {
   "name": "convert-to-string",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Convert any data type into a string",
   "main": "dist/index.min.js",
   "browser": "dist/index.min.js",
@@ -27,7 +27,7 @@
     "url": "https://github.com/bedrockcoder/convert-to-string/issues"
   },
   "devDependencies": {
-    "@types/node": "^14.14.17",
+    "@types/node": "^14.14.19",
     "jest": "^26.6.3",
     "minify": "^6.0.1",
     "typescript": "^4.1.3"
