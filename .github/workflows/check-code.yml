@@ -2,7 +2,7 @@ name: Check Code
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, v1.0 ]
 
 
 jobs:
