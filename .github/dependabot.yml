@@ -6,7 +6,7 @@ updates:
     interval: daily
   target-branch: "master"
   assignees:
-    - "bedrockcoder"
+    - "jsmon"
   reviewers:
-    - "bedrockcoder"
+    - "jsmon"
   open-pull-requests-limit: 10

@@ -3,7 +3,7 @@ name: Bug report
 about: Create a bug report to help make convert-to-string bug free!
 title: ''
 labels: 'bug'
-assignees: 'BedrockCoder'
+assignees: 'jsmon'
 
 ---
 
