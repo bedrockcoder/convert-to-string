@@ -8,7 +8,7 @@ Thank you for taking the time to contribute to `convert-to-string`!
 * [Creating Pull Requests](#creating-pull-requests)
 
 ## Code of Conduct
-The `convert-to-string` code of conduct is available in the [CODE_OF_CONDUCT.md](https://github.com/BedrockCoder/convert-to-string/blob/master/CODE_OF_CONDUCT.md) file, so please read it before contributing. (The Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 1.4)
+The `convert-to-string` code of conduct is available in the [CODE_OF_CONDUCT.md](https://github.com/jsmon/convert-to-string/blob/master/CODE_OF_CONDUCT.md) file, so please read it before contributing. (The Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org), version 1.4)
 
 ## Creating Issues
 Before you create an issue, make sure you have
