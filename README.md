@@ -1,4 +1,8 @@
 # `convert-to-string` v1.0.2
+
+# WARNING: DEPRECATED
+This package is deprecated, you should use built in JavaScript functions to convert your data types to strings, see [this gist](https://gist.github.com/jsmon/2cbee6ff427624743d05d71b23118705).
+
 Have you ever gotten stuck with `'[object Object]'`?  
 Or wondered why your array looks like `'1,2,3,a,b,c,,d'`?  
 Or haven't been able to get property `toString` of `null`?  
